@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: rgb(233, 138, 13);
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+h5 {
+    color: rgb(218, 155, 73);
+    text-align: center;
+}
+
+.hoja {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 25;
+}
+
+
+body {
+    background-image: url(./assets/aula.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    overflow: hidden;
+}
+
+input {
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-family: cursive;
+}
+
+.uno {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    font-weight: 500;
+    background-color: whitesmoke;
+}
+
+.boton {
+    display: flex;
+    margin: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+#btn {
+    box-shadow: 2px 2px 5px 2px;
+    height: 100%;
+    font-size: 20px;
+    width: 30%;
+}
+
+input:focus {
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.rojo {
+    background-color: rgb(183, 11, 11);
+}
+
+.verde {
+    background-color: green;
+}
+
+.padreSoluciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.soluciones {
+    font-size: 25px;
+}
