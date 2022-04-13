@@ -3,57 +3,80 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: rgb(233, 138, 13);
-    margin-top: 10px;
-    z-index: 1000;
+html {
+    height: 100vh;
 }
-
-h5 {
-    color: rgb(218, 155, 73);
-    text-align: center;
-}
-
-.hoja {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 25;
-}
-
 
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+
+}
+
+.conteiner {
     background-image: url(./assets/aula.png);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(4px);
+    background-position: center center;
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.resultado {
+    color: rgb(233, 138, 13);
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.subtitulo {
+    color: rgb(218, 155, 73);
+    text-align: center;
+    font-size: 20px;
+}
+
+.hoja {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.uno {
+    padding: 0%;
+    width: 60%;
+    box-shadow: 2px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: whitesmoke;
+    margin: 20px 0px;
 }
 
 input {
     background-color: whitesmoke;
     border: none;
-    border-bottom: 2px solid black;
+    width: 100%;
     text-align: center;
     font-family: cursive;
 }
 
-.uno {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 2px 2px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 25px;
-    border: 2px solid black;
-    font-weight: 500;
-    background-color: whitesmoke;
-}
 
 .boton {
     display: flex;
@@ -61,19 +84,19 @@ input {
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    margin-bottom: 10px;
+
 }
 
 #btn {
     box-shadow: 2px 2px 5px 2px;
-    height: 100%;
+    height: 30px;
     font-size: 20px;
-    width: 30%;
+    width: 10%;
+    display: block;
 }
 
-input:focus {
-    border: none;
-}
+
 
 .hidden {
     display: none;
@@ -91,9 +114,23 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: rgb(218, 155, 73);
 }
 
 .soluciones {
     font-size: 25px;
+}
+
+@media screen and (max-width:900px) {
+
+    .uno {
+        font-size: 15px;
+        ;
+    }
+
+    #btn {
+        width: 50%;
+    }
+
+
 }

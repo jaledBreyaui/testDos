@@ -84,8 +84,8 @@ document.getElementById("btn").addEventListener("click", () => {
     }).showToast();
 
     aprobado(correctas, incorrectas)
-    document.getElementById("btn").classList.add("hidden")
-    document.querySelector(".hola").textContent = " ";
+    document.querySelector(".boton").classList.add("hidden");
+    document.querySelector(".subtitulo").textContent = " ";
     console.log(respuestas, correctas, incorrectas);
 });
 
